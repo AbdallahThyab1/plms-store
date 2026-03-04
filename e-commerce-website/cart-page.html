@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLMS | Shopping Cart</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS (منفصل تماماً) -->
+    <link rel="stylesheet" href="./styles/style-header-footer.css">
+    <link rel="stylesheet" href="./styles/cart-style.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <a href="index.html"><span class="logo">PLMS</span></a>
+
+        <div class="nav-shop">
+            <a href="index.html">Home</a>
+            <a href="laptop-page.html">Laptops</a>
+            <a href="pc-page.html">PC Gaming</a>
+            <a href="display-page.html">Displays</a>
+            <a href="mobile-page.html">Mobile</a>
+            <a href="https://gemini.google.com/app" target="_blank">AI</a>
+        </div>
+
+        <div class="nav-help">
+            <a href="offer-page.html">Offers</a>
+            <a href="support-page.html">Support</a>
+            <a href="register-page.html">Register</a>
+        </div>
+
+        <div class="nav-icons">
+            <a href="index.html"><i class="fa-solid fa-home"></i></a>
+            <a href="user-page.html"><i class="fa-regular fa-user"></i></a>
+            <a href="cart-page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </header>
+
+    <!-- ===== CART PAGE CONTENT ===== -->
+    <main class="cart-page">
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Shopping <span>Cart</span></h1>
+            <p>Review and manage your items</p>
+        </div>
+
+        <!-- Cart Container -->
+        <div class="cart-container">
+
+            <!-- Cart Items Section -->
+            <div class="cart-items">
+
+                <!-- Cart Header -->
+                <div class="cart-header">
+                    <div class="product-info">Product</div>
+                    <div class="product-price">Price</div>
+                    <div class="product-quantity">Quantity</div>
+                    <div class="product-total">Total</div>
+                    <div class="product-remove"></div>
+                </div>
+
+                <!-- Cart Item 1 - Laptop -->
+                <div class="cart-item">
+                    <div class="item-product">
+                        <img src="https://dlcdnwebimgs.asus.com/gain/66DD4C53-0D9C-4F5F-AB21-07BA942D8450/w250/fwebp"
+                            alt="ASUS ROG">
+                        <div class="item-details">
+                            <h4>ASUS ROG Strix G16</h4>
+                            <p class="item-category">Gaming Laptop</p>
+                        </div>
+                    </div>
+                    <div class="item-price">$1,299</div>
+                    <div class="item-quantity">
+                        <button class="qty-btn minus"><i class="fa-solid fa-minus"></i></button>
+                        <input type="number" value="1" min="1" max="10">
+                        <button class="qty-btn plus"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="item-total">$1,299</div>
+                    <div class="item-remove">
+                        <button class="remove-btn"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <!-- Cart Item 2 - Mobile -->
+                <div class="cart-item">
+                    <div class="item-product">
+                        <img src="https://hoanghamobile.com/Uploads/2023/09/13/iphone-15-pro-max-natural-titanium-pure-back-iphone-15-pro-max-natural-titanium-pure-front-2up-screen-usen-1.png"
+                            alt="iPhone 15">
+                        <div class="item-details">
+                            <h4>iPhone 15 Pro Max</h4>
+                            <p class="item-category">Smartphone</p>
+                        </div>
+                    </div>
+                    <div class="item-price">$1,199</div>
+                    <div class="item-quantity">
+                        <button class="qty-btn minus"><i class="fa-solid fa-minus"></i></button>
+                        <input type="number" value="2" min="1" max="10">
+                        <button class="qty-btn plus"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="item-total">$2,398</div>
+                    <div class="item-remove">
+                        <button class="remove-btn"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <!-- Cart Item 3 - Display -->
+                <div class="cart-item">
+                    <div class="item-product">
+                        <img src="https://www.sammobile.com/wp-content/uploads/2025/03/Samsung-Odyssey-G9-G91F.jpg"
+                            alt="Samsung G9">
+                        <div class="item-details">
+                            <h4>Samsung Odyssey G9</h4>
+                            <p class="item-category">Gaming Monitor</p>
+                        </div>
+                    </div>
+                    <div class="item-price">$1,399</div>
+                    <div class="item-quantity">
+                        <button class="qty-btn minus"><i class="fa-solid fa-minus"></i></button>
+                        <input type="number" value="1" min="1" max="10">
+                        <button class="qty-btn plus"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="item-total">$1,399</div>
+                    <div class="item-remove">
+                        <button class="remove-btn"><i class="fa-solid fa-trash-can"></i></button>
+                    </div>
+                </div>
+
+                <!-- Cart Actions -->
+                <div class="cart-actions">
+                    <button class="continue-shopping">
+                        <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+                        
+                    </button>
+                    <button class="update-cart">
+                        <i class="fa-solid fa-rotate-right"></i> Update Cart
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h3>Order Summary</h3>
+
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span class="summary-value">$5,096</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span class="summary-value">Free</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Tax (10%)</span>
+                    <span class="summary-value">$509.60</span>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span class="summary-value">$5,605.60</span>
+                </div>
+
+                <button class="checkout-btn">
+                    <i class="fa-solid fa-lock"></i> Proceed to Checkout
+                </button>
+
+                <!-- Promo Code -->
+                <div class="promo-code">
+                    <h4>Have a promo code?</h4>
+                    <div class="promo-input">
+                        <input type="text" placeholder="Enter code">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                </div>
+
+                <!-- Payment Methods -->
+                <div class="payment-methods">
+                    <p>We accept:</p>
+                    <div class="payment-icons">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-paypal"></i>
+                        <i class="fa-brands fa-cc-apple-pay"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Recently Viewed -->
+        <div class="recently-viewed">
+            <h3>Recently <span>Viewed</span></h3>
+
+            <div class="recent-grid">
+
+                <div class="recent-item">
+                    <img src="https://www.seekpng.com/png/detail/1008-10087490_asus-zenbook-14-ux433fa.png"
+                        alt="ASUS Zenbook">
+                    <h4>ASUS Zenbook 14X</h4>
+                    <span class="recent-price">$999</span>
+                </div>
+
+                <div class="recent-item">
+                    <img src="https://img.tuttoandroid.net/wp-content/uploads/2023/12/Samsung-Galaxy-S24-Ultra-render-cop.png"
+                        alt="Samsung S24">
+                    <h4>Samsung S24 Ultra</h4>
+                    <span class="recent-price">$1,299</span>
+                </div>
+
+                <div class="recent-item">
+                    <img src="https://storage-asset.msi.com/global/picture/image/feature/nb/2026-intel/stealth-16-ai-plus/ai/stealth-16-copilot-main.jpg"
+                        alt="MSI Stealth">
+                    <h4>MSI Stealth 16</h4>
+                    <span class="recent-price">$2,199</span>
+                </div>
+
+                <div class="recent-item">
+                    <img src="https://cdn.smart-gsm.com/blog/wp-content/uploads/2024/01/oppo-find-x7-ultra_5.png"
+                        alt="Oppo Find X7">
+                    <h4>Oppo Find X7 Ultra</h4>
+                    <span class="recent-price">$899</span>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <!-- أنا + روابط سريعة -->
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <span class="logo">PLMS</span>
+                    <p class="bio">Abdallah Thyab | Computer Enginner</p>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/AbdallahThyab/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/abdallahthyab1/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abdallah-thyab-dev/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AbdallahThyab1"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- تواصل سريع -->
+            <div class="footer-contact">
+                <p><i class="fa-regular fa-envelope"></i> 1abdallahthyab@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +970 598786853</p>
+            </div>
+
+        </div>
+
+        <!-- سطر سفلي بسيط -->
+        <div class="footer-bottom">
+            <p>© 2025 PLMS. made with Abdallah</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

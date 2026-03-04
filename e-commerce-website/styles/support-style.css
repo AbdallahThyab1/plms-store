@@ -1,0 +1,396 @@
+/* ===== SUPPORT PAGE STYLES ===== */
+
+.support-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+}
+
+/* ===== Page Header ===== */
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #2d3e50;
+    margin-bottom: 8px;
+}
+
+.page-header h1 span {
+    font-weight: 600;
+    color: #00bcd4;
+}
+
+.page-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+/* ===== Contact Cards ===== */
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.contact-card {
+    background: white;
+    padding: 25px 20px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #edf2f7;
+    transition: 0.2s;
+}
+
+.contact-card:hover {
+    transform: translateY(-3px);
+    border-color: #00bcd4;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 1.8rem;
+}
+
+.contact-icon.whatsapp {
+    background: #e8f5e9;
+    color: #25d366;
+}
+
+.contact-icon.gmail {
+    background: #fce8e8;
+    color: #ea4335;
+}
+
+.contact-icon.phone {
+    background: #e3f2fd;
+    color: #2196f3;
+}
+
+.contact-icon.chat {
+    background: #ede7f6;
+    color: #673ab7;
+}
+
+.contact-card h3 {
+    color: #2d3e50;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-card p {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    transition: 0.2s;
+    color: white;
+}
+
+.contact-btn i {
+    margin-right: 6px;
+    color: white;
+}
+
+.whatsapp-btn {
+    background: #25d366;
+}
+
+.whatsapp-btn:hover {
+    background: #128c7e;
+}
+
+.gmail-btn {
+    background: #ea4335;
+}
+
+.gmail-btn:hover {
+    background: #d33426;
+}
+
+.phone-btn {
+    background: #2196f3;
+}
+
+.phone-btn:hover {
+    background: #1976d2;
+}
+
+.chat-btn {
+    background: #673ab7;
+}
+
+.chat-btn:hover {
+    background: #512da8;
+}
+
+.contact-detail {
+    color: #8f9bb3;
+    font-size: 0.85rem;
+}
+
+/* ===== Contact Form ===== */
+.form-section {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    border: 1px solid #edf2f7;
+}
+
+.form-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #2d3e50;
+    margin-bottom: 8px;
+}
+
+.form-section h2 span {
+    font-weight: 600;
+    color: #00bcd4;
+}
+
+.form-section>p {
+    text-align: center;
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #edf2f7;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    transition: 0.2s;
+    background: #f8fafc;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #00bcd4;
+    background: white;
+}
+
+.contact-form textarea {
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    background: #00bcd4;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #0097a7;
+}
+
+/* ===== FAQ Section ===== */
+.faq-section {
+    margin-bottom: 50px;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #2d3e50;
+    margin-bottom: 30px;
+}
+
+.faq-section h2 span {
+    font-weight: 600;
+    color: #00bcd4;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #edf2f7;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.faq-item:hover {
+    border-color: #00bcd4;
+}
+
+.faq-question {
+    padding: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h4 {
+    color: #2d3e50;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.faq-question i {
+    color: #8f9bb3;
+    transition: 0.2s;
+}
+
+.faq-item:hover .faq-question i {
+    color: #00bcd4;
+}
+
+.faq-answer {
+    padding: 0 18px 18px;
+    display: none;
+}
+
+.faq-item:hover .faq-answer {
+    display: block;
+}
+
+.faq-answer p {
+    color: #6c757d;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ===== Info Boxes ===== */
+.info-boxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-box {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #edf2f7;
+}
+
+.info-box i {
+    font-size: 1.8rem;
+    color: #00bcd4;
+    background: #e0f7fa;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box h4 {
+    color: #2d3e50;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.info-box p {
+    color: #6c757d;
+    font-size: 0.9rem;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1024px) {
+    .contact-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .support-page {
+        padding: 30px 15px;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .form-section {
+        padding: 30px 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .info-boxes {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .contact-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section h2,
+    .faq-section h2 {
+        font-size: 1.8rem;
+    }
+}

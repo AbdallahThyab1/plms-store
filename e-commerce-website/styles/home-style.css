@@ -1,0 +1,198 @@
+/* ===== SLIDER ===== */
+.slider-container {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.slider {
+    position: relative;
+    height: 100%;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: slideShow 20s infinite;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+    animation-delay: 10s;
+}
+
+@keyframes slideShow {
+
+    0%,
+    100% {
+        opacity: 0;
+    }
+
+    5%,
+    45% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ===== CATEGORIES SECTION ===== */
+.categories-section {
+    padding: 60px 30px;
+    background: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #2d3e50;
+    margin-bottom: 8px;
+}
+
+.section-header h2 span {
+    font-weight: 600;
+    color: #00bcd4;
+}
+
+.section-header p {
+    color: #6c757d;
+    font-size: 1.1rem;
+}
+
+/* Categories Grid */
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Category Card */
+.category-card {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #edf2f7;
+    transition: 0.2s;
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+    border-color: #00bcd4;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+}
+
+/* Icon Base */
+.cat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
+/* Icon Colors */
+.top-deals {
+    background: #FFE8E8;
+    color: #FF6B6B;
+}
+
+.laptops {
+    background: #E8F0FF;
+    color: #4A90E2;
+}
+
+.pc-gaming {
+    background: #EDE8FF;
+    color: #6B5B95;
+}
+
+.displays {
+    background: #E0F7FA;
+    color: #36D1DC;
+}
+
+.mobiles {
+    background: #FFF4E5;
+    color: #F2994A;
+}
+
+/* Text */
+.category-card h4 {
+    color: #2d3e50;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.category-card span {
+    color: #8f9bb3;
+    font-size: 0.85rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-container {
+        height: 300px;
+    }
+
+    .categories-section {
+        padding: 40px 20px;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .categories-section {
+        padding: 30px 15px;
+    }
+
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,399 @@
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    line-height: 1.5;
+    color: #4a4a4a;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: white;
+    height: 70px;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #00bcd4;
+    letter-spacing: -0.5px;
+}
+
+/* Navigation */
+.nav-shop {
+    display: flex;
+    gap: 2rem;
+    margin: 0 1rem;
+}
+
+.nav-help {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0 1rem;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* Header Links */
+.nav-shop a,
+.nav-help a {
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    color: #4a4a4a;
+    position: relative;
+}
+
+.nav-shop a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background: #00bcd4;
+    transition: width 0.2s ease;
+}
+
+.nav-shop a:hover::after {
+    width: 100%;
+}
+
+.nav-shop a:hover,
+.nav-help a:hover {
+    color: #00bcd4;
+}
+
+.nav-icons a {
+    display: flex;
+    align-items: center;
+    color: #4a4a4a;
+}
+
+.nav-icons i {
+    font-size: 1.2rem;
+    transition: all 0.2s ease;
+}
+
+.nav-icons a:hover i {
+    color: #00bcd4;
+    transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #1a2632;
+    padding: 40px 5% 20px;
+    color: #e0e0e0;
+    direction: rtl;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-logo .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #00bcd4;
+    background: transparent;
+}
+
+.footer-logo .bio {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    margin-top: 5px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-social a {
+    width: 36px;
+    height: 36px;
+    background: #2a3745;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.footer-social a:hover {
+    background: #00bcd4;
+    transform: translateY(-3px);
+}
+
+.footer-social i {
+    color: white;
+    font-size: 1rem;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.footer-contact p {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-contact i {
+    color: #00bcd4;
+    font-size: 1rem;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    border-top: 1px solid #2a3745;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE للهواتف بشكل أساسي ===== */
+
+/* شاشات متوسطة (تابلت) */
+@media (max-width: 900px) {
+    /* Header */
+    header {
+        height: auto;
+        padding: 12px 4%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-shop {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 1.2rem;
+        margin: 5px 0 0;
+    }
+
+    .nav-help {
+        order: 2;
+        width: auto;
+        gap: 1.2rem;
+        margin: 0;
+    }
+
+    .nav-icons {
+        order: 1;
+        gap: 1rem;
+    }
+
+    .nav-shop a,
+    .nav-help a {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 30px 4% 15px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-main {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-contact {
+        justify-content: center;
+        gap: 15px;
+    }
+}
+
+/* شاشات صغيرة (جوال) */
+@media (max-width: 600px) {
+    /* Header */
+    header {
+        padding: 10px 3%;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-shop {
+        gap: 1rem;
+    }
+
+    .nav-shop a {
+        font-size: 0.85rem;
+    }
+
+    .nav-help {
+        gap: 1rem;
+    }
+
+    .nav-help a {
+        font-size: 0.85rem;
+    }
+
+    .nav-icons {
+        gap: 0.8rem;
+    }
+
+    .nav-icons i {
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 25px 3% 15px;
+    }
+
+    .footer-logo .logo {
+        font-size: 1.6rem;
+    }
+
+    .footer-logo .bio {
+        font-size: 0.85rem;
+    }
+
+    .footer-social a {
+        width: 32px;
+        height: 32px;
+    }
+
+    .footer-social i {
+        font-size: 0.9rem;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-contact p {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.8rem;
+    }
+}
+
+/* شاشات صغيرة جداً */
+@media (max-width: 380px) {
+    /* Header */
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-shop {
+        gap: 0.8rem;
+    }
+
+    .nav-shop a {
+        font-size: 0.8rem;
+    }
+
+    .nav-help {
+        gap: 0.8rem;
+    }
+
+    .nav-help a {
+        font-size: 0.8rem;
+    }
+
+    .nav-icons {
+        gap: 0.6rem;
+    }
+
+    .nav-icons i {
+        font-size: 0.9rem;
+    }
+
+    /* Footer */
+    .footer-logo .logo {
+        font-size: 1.4rem;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-social {
+        gap: 8px;
+    }
+
+    .footer-social a {
+        width: 28px;
+        height: 28px;
+    }
+
+    .footer-contact p {
+        font-size: 0.8rem;
+    }
+}
+
+/* تحسينات للمس */
+@media (hover: none) and (pointer: coarse) {
+    .nav-shop a,
+    .nav-help a,
+    .nav-icons a,
+    .footer-social a {
+        padding: 8px 0;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-shop a::after {
+        display: none;
+    }
+}

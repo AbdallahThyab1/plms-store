@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLMS | Premium Electronics</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS (منفصل تماماً) -->
+    <link rel="stylesheet" href="./styles/style-header-footer.css">
+    <link rel="stylesheet" href="./styles/support-style.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <a href="index.html"><span class="logo">PLMS</span></a>
+
+        <div class="nav-shop">
+            <a href="index.html">Home</a>
+            <a href="laptop-page.html">Laptops</a>
+            <a href="pc-page.html">PC Gaming</a>
+            <a href="display-page.html">Displays</a>
+            <a href="mobile-page.html">Mobile</a>
+            <a href="https://gemini.google.com/app" target="_blank">AI</a>
+        </div>
+
+        <div class="nav-help">
+            <a href="offer-page.html">Offers</a>
+            <a href="register-page.html">Register</a>
+        </div>
+
+        <div class="nav-icons">
+            <a href="index.html"><i class="fa-solid fa-home"></i></a>
+            <a href="user-page.html"><i class="fa-regular fa-user"></i></a>
+            <a href="cart-page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </header>
+
+    <!-- ===== SUPPORT PAGE CONTENT ===== -->
+    <main class="support-page">
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Support <span>Center</span></h1>
+            <p>We're here to help you 24/7</p>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="contact-cards">
+
+            <!-- WhatsApp Card -->
+            <div class="contact-card">
+                <div class="contact-icon whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <h3>WhatsApp</h3>
+                <p>Fast response within minutes</p>
+                <a href="https://wa.me/970598786853" class="contact-btn whatsapp-btn" target="_blank">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <span class="contact-detail">+970 598 786 853</span>
+            </div>
+
+            <!-- Gmail Card -->
+            <div class="contact-card">
+                <div class="contact-icon gmail">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <h3>Email</h3>
+                <p>Response within 24 hours</p>
+                <a href="mailto:1abdallahthyab@gmail.com" class="contact-btn gmail-btn">
+                    <i class="fa-regular fa-envelope"></i> Send Email
+                </a>
+                <span class="contact-detail">1abdallahthyab@gmail.com</span>
+            </div>
+
+            <!-- Phone Card -->
+            <div class="contact-card">
+                <div class="contact-icon phone">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h3>Phone</h3>
+                <p>Direct call support</p>
+                <a href="tel:+970598786853" class="contact-btn phone-btn">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+                <span class="contact-detail">+970 598 786 853</span>
+            </div>
+
+            <!-- Live Chat Card -->
+            <div class="contact-card">
+                <div class="contact-icon chat">
+                    <i class="fa-regular fa-message"></i>
+                </div>
+                <h3>Live Chat</h3>
+                <p>Instant messaging support</p>
+                <a href="#" class="contact-btn chat-btn" onclick="return false;">
+                    <i class="fa-regular fa-message"></i> Start Chat
+                </a>
+                <span class="contact-detail">Available 24/7</span>
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-section">
+            <h2>Send us a <span>Message</span></h2>
+            <p>Fill out the form and we'll get back to you soon</p>
+
+            <form class="contact-form">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" placeholder="Phone Number">
+                    <select>
+                        <option value="" disabled selected>Select Subject</option>
+                        <option value="order">Order Issue</option>
+                        <option value="product">Product Question</option>
+                        <option value="return">Return & Refund</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <textarea rows="5" placeholder="Your Message..." required></textarea>
+                <button type="submit" class="submit-btn">
+                    <i class="fa-regular fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked <span>Questions</span></h2>
+
+            <div class="faq-grid">
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How long does delivery take?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Delivery takes 3-5 business days within the same city, and 5-7 business days for other
+                            cities.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>What is your return policy?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer 14-day return policy for all products in their original condition.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>Do you offer warranty?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all products come with 1-year manufacturer warranty.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h4>How can I track my order?</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can track your order through the tracking link sent to your email.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Support Info -->
+        <div class="info-boxes">
+            <div class="info-box">
+                <i class="fa-regular fa-clock"></i>
+                <div>
+                    <h4>24/7 Support</h4>
+                    <p>Always here for you</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <i class="fa-regular fa-comment"></i>
+                <div>
+                    <h4>Fast Response</h4>
+                    <p>Within 5-10 minutes</p>
+                </div>
+            </div>
+            <div class="info-box">
+                <i class="fa-regular fa-circle-check"></i>
+                <div>
+                    <h4>100% Satisfaction</h4>
+                    <p>Guaranteed</p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <!-- أنا + روابط سريعة -->
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <span class="logo">PLMS</span>
+                    <p class="bio">Abdallah Thyab | Computer Enginner</p>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/AbdallahThyab/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/abdallahthyab1/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abdallah-thyab-dev/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AbdallahThyab1"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- تواصل سريع -->
+            <div class="footer-contact">
+                <p><i class="fa-regular fa-envelope"></i> 1abdallahthyab@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +970 598786853</p>
+            </div>
+
+        </div>
+
+        <!-- سطر سفلي بسيط -->
+        <div class="footer-bottom">
+            <p>© 2025 PLMS. made with Abdallah</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

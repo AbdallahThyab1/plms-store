@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLMS | Register</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Main CSS (منفصل تماماً) -->
+    <link rel="stylesheet" href="./styles/style-header-footer.css">
+    <link rel="stylesheet" href="./styles/register-style.css">
+</head>
+
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <a href="index.html"><span class="logo">PLMS</span></a>
+
+        <div class="nav-shop">
+            <a href="index.html">Home</a>
+            <a href="laptop-page.html">Laptops</a>
+            <a href="pc-page.html">PC Gaming</a>
+            <a href="display-page.html">Displays</a>
+            <a href="mobile-page.html">Mobile</a>
+            <a href="https://gemini.google.com/app" target="_blank">AI</a>
+        </div>
+
+        <div class="nav-help">
+            <a href="offer-page.html">Offers</a>
+            <a href="support-page.html">Support</a>
+        </div>
+
+        <div class="nav-icons">
+            <a href="index.html"><i class="fa-solid fa-home"></i></a>
+            <a href="user-page.html"><i class="fa-regular fa-user"></i></a>
+            <a href="cart-page.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+    </header>
+
+    <!-- ===== REGISTER PAGE CONTENT ===== -->
+    <main class="register-page">
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>Create <span>Account</span></h1>
+            <p>Join us and start shopping</p>
+        </div>
+
+        <!-- Register Form -->
+        <div class="form-container">
+
+            <form class="register-form">
+
+                <!-- Name Fields -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="Enter your first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Enter your last name" required>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Phone -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Password Fields -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm password" required>
+                    </div>
+                </div>
+
+                <!-- Terms -->
+                <div class="terms-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy
+                            Policy</a></label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="register-btn">
+                    <i class="fa-regular fa-paper-plane"></i> Create Account
+                </button>
+
+                <!-- Login Link -->
+                <div class="login-link">
+                    <p>Already have an account? <a href="index.html">Login here</a></p>
+                </div>
+
+            </form>
+
+            <!-- Social Register -->
+            <div class="social-register">
+                <p>Or register with</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon google">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                    <a href="#" class="social-icon facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon apple">
+                        <i class="fa-brands fa-apple"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Features -->
+        <div class="features-section">
+            <h2>Why <span>Join Us?</span></h2>
+
+            <div class="features-grid">
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h4>Exclusive Offers</h4>
+                    <p>Get special discounts and offers only for members</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa-regular fa-bell"></i>
+                    </div>
+                    <h4>Price Alerts</h4>
+                    <p>Get notified when prices drop on your favorite items</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa-regular fa-clock"></i>
+                    </div>
+                    <h4>Fast Checkout</h4>
+                    <p>Save your info for faster checkout next time</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <h4>Wishlist</h4>
+                    <p>Save your favorite products to wishlist</p>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-content">
+
+            <!-- أنا + روابط سريعة -->
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <span class="logo">PLMS</span>
+                    <p class="bio">Abdallah Thyab | Computer Enginner</p>
+                </div>
+
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/AbdallahThyab/"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/abdallahthyab1/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/abdallah-thyab-dev/"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/AbdallahThyab1"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+
+            <!-- تواصل سريع -->
+            <div class="footer-contact">
+                <p><i class="fa-regular fa-envelope"></i> 1abdallahthyab@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +970 598786853</p>
+            </div>
+
+        </div>
+
+        <!-- سطر سفلي بسيط -->
+        <div class="footer-bottom">
+            <p>© 2025 PLMS. made with Abdallah</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
