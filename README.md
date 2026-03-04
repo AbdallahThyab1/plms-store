@@ -6,12 +6,6 @@ A clean and responsive electronics e-commerce website built with pure HTML & CSS
 
 ---
 
-## 🚀 Live Demo
-
-🔗 **https://plms-ps.netlify.app/**
-
----
-
 ## 📱 Pages
 
 - Home
